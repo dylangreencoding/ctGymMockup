@@ -1,0 +1,276 @@
+/* GENERAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.container-small {
+  max-width: 60rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vert {
+  flex-direction: column;
+}
+
+body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+  /* font-family: "Cormorant Garamond", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+/* LINKS */
+
+a:link, a:visited {
+  text-decoration: none;
+  color: #1c3d56;
+}
+
+a:hover, a:active {
+  border-bottom: #1c3d56 1px solid;
+}
+
+.obvious-link {
+  border-bottom: #1c3d56 1px solid;
+}
+
+.p-margin {
+  margin-bottom: 3.2rem;
+}
+
+/* NAVBAR */
+
+nav {
+  padding: 1rem 0 1rem 0;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.logo {
+  font-family: "Cormorant Garamond", sans-serif;
+  font-size: 2.4rem;
+}
+
+nav ul {
+  align-items: center;
+}
+
+nav li {
+  margin-right: 4.8rem;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+/* HEADER */
+
+header {
+  background-color: white;
+}
+
+.main-heading {
+  text-align: center;
+  padding: 9.76rem 0 4.8rem 0;
+}
+
+.h-1 {
+  font-size: 4.8rem;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", sans-serif;
+}
+
+/* MAIN */
+
+main {
+  padding: 0 0 4.8rem 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+/* FOR HOME PAGE, MAIN ELEMENT */
+
+.padding-top {
+  padding-top: 4.8rem;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.zag {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* FOR MEMBERS PAGE, MAIN ELEMENT */
+
+.margin-bottom {
+  margin-bottom: 9.6rem;
+}
+
+.form-login {
+  padding-left: 1.2rem;
+  margin: 2.4rem 0 2.4rem 4.8rem;
+  border-left: #333 3px double;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 50%;
+}
+
+.form-login label {
+  line-height: 3.2rem;
+}
+
+.form-login input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.input-field {
+  width: 100%;
+  height: 2.4rem;
+}
+
+.box-btn-login {
+  display: flex;
+  justify-content: start;
+}
+
+.box-btn-logout {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-loginout:link, .btn-loginout:visited {
+  display: inline-block;
+  background-color: #2a5c82;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.4rem 1.2rem;
+  margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.btn-loginout:hover, .btn-loginout:active {
+  border: none;
+  background-color: #1c3d56;
+  color: #fff;
+  
+}
+
+.account-info {
+  margin-bottom: 2.4rem;
+}
+
+/* FOR CLASS SCHEDULE PAGE */
+
+.class-schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 6.4rem;
+  column-gap: 2.4rem;
+}
+
+.class-schedule h5 {
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: white;
+  padding: 4.8rem 0 0 0;
+}
+
+.footer-info {
+  margin-bottom: 4.8rem;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+.footer-heading {
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* MODAL */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 9;
+  background: white;
+  height: 18%;
+  padding: 2.4rem 3.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0 , 0 , 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+  transition: all 0.5s ease-out;
+
+}
+
+.hide-overlay {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
